@@ -8,8 +8,8 @@ scoreboard players operation @e[tag=new] ui.id = .global ui.id
 
 # Open initial page
 scoreboard players set .type ui.val 1
-execute as @e[type=chest_minecart,tag=new] run function ui/menu/settings/root/open
-execute as @e[type=chest_minecart,tag=new] run function ui/minecart/load_page
+execute as @e[type=chest_minecart,tag=new] run function ui:menu/settings/root/open
+execute as @e[type=chest_minecart,tag=new] run function ui:minecart/load_page
 
 
 tag @e remove new

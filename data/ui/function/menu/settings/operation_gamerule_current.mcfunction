@@ -6,6 +6,6 @@
 # - operation
 # - val
 $data modify storage ui:args val set value $(val)
-$function ui/menu/settings/$(operation)_gamerule with storage ui:args
+$function ui:menu/settings/$(operation)_gamerule with storage ui:args
 # update item every time
-function ui/menu/settings/update_item with storage ui:args
+function ui:menu/settings/update_item with storage ui:args

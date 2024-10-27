@@ -6,7 +6,7 @@ data modify entity @s data.page.enchant_selector set value [\
       "minecraft:item_name": '"Weapon"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/enchantments/select"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/enchantments/select"\
         }\
       },\
       "minecraft:attribute_modifiers": {show_in_tooltip:false,modifiers:[]},\
@@ -28,7 +28,7 @@ data modify entity @s data.page.enchant_selector set value [\
       "minecraft:item_name": '"Armor"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/enchantments/select"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/enchantments/select"\
         }\
       },\
       "minecraft:attribute_modifiers": { "show_in_tooltip": false, "modifiers": [] },\
@@ -50,7 +50,7 @@ data modify entity @s data.page.enchant_selector set value [\
       "minecraft:item_name": '"Tool"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/enchantments/select"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/enchantments/select"\
         }\
       },\
       "minecraft:attribute_modifiers": { "show_in_tooltip": false, "modifiers": [] },\
@@ -72,7 +72,7 @@ data modify entity @s data.page.enchant_selector set value [\
       "minecraft:item_name": '"Bow and Crossbow"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/enchantments/select"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/enchantments/select"\
         }\
       },\
       "minecraft:attribute_modifiers": { "show_in_tooltip": false, "modifiers": [] },\
@@ -95,7 +95,7 @@ data modify entity @s data.page.enchant_selector set value [\
       "minecraft:rarity": "uncommon",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/enchantments/select"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/enchantments/select"\
         }\
       },\
       "minecraft:attribute_modifiers": { "show_in_tooltip": false, "modifiers": [] },\
@@ -114,7 +114,7 @@ data modify entity @s data.page.enchant_selector set value [\
       "minecraft:item_name": '"Movement and Utility"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/enchantments/select"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/enchantments/select"\
         }\
       },\
       "minecraft:attribute_modifiers": { "show_in_tooltip": false, "modifiers": [] },\
@@ -134,7 +134,7 @@ data modify entity @s data.page.enchant_selector set value [\
       "minecraft:item_name": '"Universal"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/enchantments/select"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/enchantments/select"\
         }\
       },\
       "minecraft:attribute_modifiers": { "show_in_tooltip": false, "modifiers": [] },\

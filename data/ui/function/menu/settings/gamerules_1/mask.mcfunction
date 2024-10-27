@@ -6,7 +6,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "BACK",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/root/open"\
+          "cmd": "function ui:menu/settings/root/open"\
         }\
       }\
     }\
@@ -22,7 +22,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.blockExplosionDropDecay.description_2","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'blockExplosionDropDecay'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'blockExplosionDropDecay'}"\
         }\
       }\
     }\
@@ -39,7 +39,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.doVinesSpread.description_3","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doVinesSpread'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doVinesSpread'}"\
         }\
       }\
     }\
@@ -52,7 +52,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doWardenSpawning","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doWardenSpawning'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doWardenSpawning'}"\
         }\
       }\
     }\
@@ -67,7 +67,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.enderPearlsVanishOnDeath.description_1","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'enderPearlsVanishOnDeath'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'enderPearlsVanishOnDeath'}"\
         }\
       }\
     }\
@@ -83,7 +83,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.lavaSourceConversion.description_2","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'lavaSourceConversion'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'lavaSourceConversion'}"\
         }\
       }\
     }\
@@ -99,7 +99,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.mobExplosionDropDecay.description_2","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'mobExplosionDropDecay'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'mobExplosionDropDecay'}"\
         }\
       }\
     }\
@@ -115,7 +115,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.projectilesCanBreakBlocks.description_2","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'projectilesCanBreakBlocks'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'projectilesCanBreakBlocks'}"\
         }\
       }\
     }\
@@ -129,7 +129,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.reducedDebugInfo.description","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'reducedDebugInfo'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'reducedDebugInfo'}"\
         }\
       }\
     }\
@@ -141,7 +141,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "{\"text\":\"Previous Page\",\"italic\":false}",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_0/open"\
+          "cmd": "function ui:menu/settings/gamerules_0/open"\
         }\
       }\
     }\
@@ -154,7 +154,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.sendCommandFeedback","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'sendCommandFeedback'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'sendCommandFeedback'}"\
         }\
       }\
     }\
@@ -168,7 +168,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.showDeathMessages","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'showDeathMessages'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'showDeathMessages'}"\
         }\
       }\
     }\
@@ -181,7 +181,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.spectatorsGenerateChunks","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'spectatorsGenerateChunks'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'spectatorsGenerateChunks'}"\
         }\
       }\
     }\
@@ -197,7 +197,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.tntExplosionDropDecay.description_2","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'tntExplosionDropDecay'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'tntExplosionDropDecay'}"\
         }\
       }\
     }\
@@ -215,7 +215,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.universalAnger.description_3","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doPatrolSpawning'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doPatrolSpawning'}"\
         }\
       }\
     }\
@@ -232,7 +232,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.waterSourceConversion.description_2","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'waterSourceConversion'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'waterSourceConversion'}"\
         }\
       }\
     }\
@@ -250,7 +250,7 @@ data modify storage ui mask set value [\
         "val": 65536,\
         "val_txt": '{"text":"65536","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -270,7 +270,7 @@ data modify storage ui mask set value [\
         "val": 65536,\
         "val_txt": '{"text":"65536","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -287,7 +287,7 @@ data modify storage ui mask set value [\
         "val": 24,\
         "val_txt": '{"text":"24","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -304,7 +304,7 @@ data modify storage ui mask set value [\
         "val": 3,\
         "val_txt": '{"text":"3","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -323,7 +323,7 @@ data modify storage ui mask set value [\
         "val": 2,\
         "val_txt": '{"text":"2","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -342,7 +342,7 @@ data modify storage ui mask set value [\
         "val": 10,\
         "val_txt": '{"text":"10","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -362,7 +362,7 @@ data modify storage ui mask set value [\
         "val": 1,\
         "val_txt": '{"text":"1","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -381,7 +381,7 @@ data modify storage ui mask set value [\
         "val": 100,\
         "val_txt": '{"text":"100","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -401,7 +401,7 @@ data modify storage ui mask set value [\
         "val": 80,\
         "val_txt": '{"text":"80","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\
@@ -421,7 +421,7 @@ data modify storage ui mask set value [\
         "val": 1,\
         "val_txt": '{"text":"1","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       },\
     }\
@@ -441,7 +441,7 @@ data modify storage ui mask set value [\
         "val": 32768,\
         "val_txt": '{"text":"32768","color":"white","italic":false}',\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_number/open"\
+          "cmd": "function ui:menu/settings/gamerules_number/open"\
         }\
       }\
     }\

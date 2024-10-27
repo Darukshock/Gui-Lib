@@ -6,7 +6,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "BACK",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/equipment/open"\
+          "cmd": "function ui:menu/settings/equipment/open"\
         }\
       }\
     }\
@@ -18,7 +18,7 @@ data modify storage ui mask set value [\
             "minecraft:item_name":'"Using Converts to"',\
             "minecraft:custom_data":{\
                 "ui.item":{\
-                    "input": "execute on passengers run function ui/menu/settings/equipment/food/set_using_converts_to"\
+                    "input": "execute on passengers run function ui:menu/settings/equipment/food/set_using_converts_to"\
                 }\
             },\
             "minecraft:attribute_modifiers": {show_in_tooltip:false,modifiers:[]}\
@@ -32,9 +32,9 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Saturation"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/food/increase {val:1,key:saturation,scale:10,type:float}",\
-          "offhand": "execute on passengers run function ui/menu/settings/equipment/food/increase {val:10,key:saturation,scale:10,type:float}",\
-          "shift": "execute on passengers run function ui/menu/settings/equipment/food/decrease {key:saturation,scale:10,type:float}"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/food/increase {val:1,key:saturation,scale:10,type:float}",\
+          "offhand": "execute on passengers run function ui:menu/settings/equipment/food/increase {val:10,key:saturation,scale:10,type:float}",\
+          "shift": "execute on passengers run function ui:menu/settings/equipment/food/decrease {key:saturation,scale:10,type:float}"\
         }\
       }\
     }\
@@ -47,9 +47,9 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Eat Seconds"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/food/increase {val:1,key:eat_seconds,scale:10,type:float}",\
-          "offhand": "execute on passengers run function ui/menu/settings/equipment/food/increase {val:10,key:eat_seconds,scale:10,type:float}",\
-          "shift": "execute on passengers run function ui/menu/settings/equipment/food/decrease {key:eat_seconds,scale:10,type:float}"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/food/increase {val:1,key:eat_seconds,scale:10,type:float}",\
+          "offhand": "execute on passengers run function ui:menu/settings/equipment/food/increase {val:10,key:eat_seconds,scale:10,type:float}",\
+          "shift": "execute on passengers run function ui:menu/settings/equipment/food/decrease {key:eat_seconds,scale:10,type:float}"\
         }\
       }\
     }\
@@ -75,9 +75,9 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Nutrition"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/food/increase {val:1,key:nutrition,type:int,scale:1}",\
-          "offhand": "execute on passengers run function ui/menu/settings/equipment/food/increase {val:5,key:nutrition,type:int,scale:1}",\
-          "shift": "execute on passengers run function ui/menu/settings/equipment/food/decrease {key:nutrition,type:int,scale:1}"\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/food/increase {val:1,key:nutrition,type:int,scale:1}",\
+          "offhand": "execute on passengers run function ui:menu/settings/equipment/food/increase {val:5,key:nutrition,type:int,scale:1}",\
+          "shift": "execute on passengers run function ui:menu/settings/equipment/food/decrease {key:nutrition,type:int,scale:1}"\
         }\
       }\
     }\
@@ -89,7 +89,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Effects"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "execute on passengers run function ui/menu/settings/equipment/food/effects/open",\
+          "cmd": "execute on passengers run function ui:menu/settings/equipment/food/effects/open",\
           "full_drop": "execute on passengers run data remove entity @s data.item.components.minecraft:food.effects"\
         }\
       }\
@@ -113,8 +113,8 @@ data modify storage ui mask set value [\
 
 
 # using converts to
-execute if data entity @s data.item.components.minecraft:food.using_converts_to run function ui/menu/settings/equipment/food/copy_using_converts_to
+execute if data entity @s data.item.components.minecraft:food.using_converts_to run function ui:menu/settings/equipment/food/copy_using_converts_to
 # copy item
 data modify entity @s data.item.Slot set value 13b
 data modify storage ui mask[{Slot:13b}] set from entity @s data.item
-data modify storage ui mask[{Slot:13b}].components.minecraft:custom_data."ui.item" set value {cmd:"function ui/menu/settings/equipment/give_item"}
+data modify storage ui mask[{Slot:13b}].components.minecraft:custom_data."ui.item" set value {cmd:"function ui:menu/settings/equipment/give_item"}

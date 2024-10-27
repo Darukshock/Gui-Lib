@@ -6,7 +6,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "BACK",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/root/open"\
+          "cmd": "function ui:menu/settings/root/open"\
         }\
       }\
     }\
@@ -18,7 +18,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§3DEFAULT",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/set_gamerule with storage ui item.components.minecraft:custom_data"\
+          "cmd": "function ui:menu/settings/set_gamerule with storage ui item.components.minecraft:custom_data"\
         }\
       }\
     }\
@@ -30,7 +30,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"§c/2"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:2,operation:divide}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:2,operation:divide}"\
         }\
       }\
     }\
@@ -42,7 +42,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§c-64",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:64,operation:decrease}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:64,operation:decrease}"\
         }\
       }\
     }\
@@ -54,7 +54,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§c-10",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:10,operation:decrease}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:10,operation:decrease}"\
         }\
       }\
     }\
@@ -66,7 +66,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§c-1",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:1,operation:decrease}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:1,operation:decrease}"\
         }\
       }\
     }\
@@ -92,7 +92,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§a+1",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:1,operation:increase}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:1,operation:increase}"\
         }\
       }\
     }\
@@ -104,7 +104,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§a+10",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:10,operation:increase}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:10,operation:increase}"\
         }\
       }\
     }\
@@ -116,7 +116,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§2+64",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:64,operation:increase}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:64,operation:increase}"\
         }\
       }\
     }\
@@ -128,7 +128,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "§2*2",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/world_border/operation {val:2,operation:multiply}"\
+          "cmd": "function ui:menu/settings/world_border/operation {val:2,operation:multiply}"\
         }\
       }\
     }\

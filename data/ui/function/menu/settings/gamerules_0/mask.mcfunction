@@ -6,7 +6,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "BACK",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/root/open"\
+          "cmd": "function ui:menu/settings/root/open"\
         }\
       }\
     }\
@@ -19,7 +19,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.announceAdvancements","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'announceAdvancements'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'announceAdvancements'}"\
         }\
       }\
     }\
@@ -32,7 +32,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.commandBlockOutput","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'commandBlockOutput'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'commandBlockOutput'}"\
         }\
       }\
     }\
@@ -45,7 +45,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.disableElytraMovementCheck","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'disableElytraMovementCheck'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'disableElytraMovementCheck'}"\
         }\
       }\
     }\
@@ -59,7 +59,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.disableRaids","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'disableRaids'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'disableRaids'}"\
         }\
       }\
     }\
@@ -72,7 +72,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doDaylightCycle","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doDaylightCycle'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doDaylightCycle'}"\
         }\
       }\
     }\
@@ -87,7 +87,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.doEntityDrops.description_1","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doEntityDrops'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doEntityDrops'}"\
         }\
       }\
     }\
@@ -100,7 +100,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doFireTick","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doFireTick'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doFireTick'}"\
         }\
       }\
     }\
@@ -113,7 +113,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doInsomnia","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doInsomnia'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doInsomnia'}"\
         }\
       }\
     }\
@@ -125,7 +125,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "{\"text\":\"Next Page\",\"italic\":false}",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/gamerules_1/open"\
+          "cmd": "function ui:menu/settings/gamerules_1/open"\
         }\
       }\
     }\
@@ -138,7 +138,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doImmediateRespawn","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doImmediateRespawn'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doImmediateRespawn'}"\
         }\
       }\
     }\
@@ -152,7 +152,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.doLimitedCrafting.description","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doLimitedCrafting'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doLimitedCrafting'}"\
         }\
       }\
     }\
@@ -166,7 +166,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.doMobLoot.description","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doMobLoot'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doMobLoot'}"\
         }\
       }\
     }\
@@ -180,7 +180,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.doMobSpawning.description","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doMobSpawning'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doMobSpawning'}"\
         }\
       }\
     }\
@@ -193,7 +193,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doPatrolSpawning","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doPatrolSpawning'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doPatrolSpawning'}"\
         }\
       }\
     }\
@@ -208,7 +208,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.doTileDrops.description","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doTileDrops'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doTileDrops'}"\
         }\
       }\
     }\
@@ -221,7 +221,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doTraderSpawning","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doTraderSpawning'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doTraderSpawning'}"\
         }\
       }\
     }\
@@ -234,7 +234,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doWeatherCycle","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doWeatherCycle'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doWeatherCycle'}"\
         }\
       }\
     }\
@@ -247,7 +247,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.drowningDamage","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'drowningDamage'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'drowningDamage'}"\
         }\
       }\
     }\
@@ -260,7 +260,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.fallDamage","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'fallDamage'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'fallDamage'}"\
         }\
       }\
     }\
@@ -273,7 +273,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.fireDamage","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'fireDamage'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'fireDamage'}"\
         }\
       }\
     }\
@@ -288,7 +288,7 @@ data modify storage ui mask set value [\
       '{"italic":false,"translate":"gamerule.forgiveDeadPlayers.description_1","color":"white"}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'forgiveDeadPlayers'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'forgiveDeadPlayers'}"\
         }\
       }\
     }\
@@ -301,7 +301,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.freezeDamage","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'freezeDamage'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'freezeDamage'}"\
         }\
       }\
     }\
@@ -314,7 +314,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.keepInventory","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'keepInventory'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'keepInventory'}"\
         }\
       }\
     }\
@@ -327,7 +327,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.logAdminCommands","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'logAdminCommands'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'logAdminCommands'}"\
         }\
       }\
     }\
@@ -340,7 +340,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.mobGriefing","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'mobGriefing'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'mobGriefing'}"\
         }\
       },\
       "minecraft:enchantment_glint_override":0b,\
@@ -354,7 +354,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.naturalRegeneration","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'naturalRegeneration'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'naturalRegeneration'}"\
         }\
       }\
     }\

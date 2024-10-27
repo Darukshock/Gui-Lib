@@ -6,7 +6,7 @@ data modify storage ui mask set value [\
             "minecraft:item_name":'"Equipment Creator"',\
             "minecraft:custom_data":{\
                 "ui.item":{\
-                    "cmd":"function ui/menu/settings/equipment/open"\
+                    "cmd":"function ui:menu/settings/equipment/open"\
                 }\
             },\
             "minecraft:attribute_modifiers": {show_in_tooltip:false,modifiers:[]}\
@@ -38,7 +38,7 @@ data modify storage ui mask set value [\
             "minecraft:item_name":"Gamerules",\
             "minecraft:custom_data":{\
                 "ui.item":{\
-                    "cmd":"function ui/menu/settings/gamerules_0/open"\
+                    "cmd":"function ui:menu/settings/gamerules_0/open"\
                 }\
             }\
         }\
@@ -50,7 +50,7 @@ data modify storage ui mask set value [\
             "minecraft:item_name":'"Weather & Daytime"',\
             "minecraft:custom_data":{\
                 "ui.item":{\
-                    "cmd":"function ui/menu/settings/weather/open",\
+                    "cmd":"function ui:menu/settings/weather/open",\
                     "shift":"say SHIFT"\
                 }\
             }\
@@ -63,7 +63,7 @@ data modify storage ui mask set value [\
             "minecraft:item_name":'"World Border"',\
             "minecraft:custom_data":{\
                 "ui.item":{\
-                    "cmd":"function ui/menu/settings/world_border/open"\
+                    "cmd":"function ui:menu/settings/world_border/open"\
                 }\
             }\
         }\

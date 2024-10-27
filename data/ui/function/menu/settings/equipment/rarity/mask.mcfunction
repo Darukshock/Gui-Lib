@@ -6,7 +6,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "BACK",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/equipment/open"\
+          "cmd": "function ui:menu/settings/equipment/open"\
         }\
       }\
     }\
@@ -18,7 +18,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Common"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/run_cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value common',cm2:'function ui/menu/settings/equipment/open'}"\
+          "cmd": "function ui:run/cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value common',cm2:'function ui:menu/settings/equipment/open'}"\
         }\
       }\
     }\
@@ -30,7 +30,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Uncommon"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/run_cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value uncommon',cm2:'function ui/menu/settings/equipment/open'}"\
+          "cmd": "function ui:run/cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value uncommon',cm2:'function ui:menu/settings/equipment/open'}"\
         }\
       }\
     }\
@@ -42,7 +42,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Rare"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/run_cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value rare',cm2:'function ui/menu/settings/equipment/open'}"\
+          "cmd": "function ui:run/cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value rare',cm2:'function ui:menu/settings/equipment/open'}"\
         }\
       }\
     }\
@@ -54,7 +54,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": '"Epic"',\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/run_cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value epic',cm2:'function ui/menu/settings/equipment/open'}"\
+          "cmd": "function ui:run/cm2 {cmd:'execute on passengers run data modify entity @s data.item.components.minecraft:rarity set value epic',cm2:'function ui:menu/settings/equipment/open'}"\
         }\
       }\
     }\

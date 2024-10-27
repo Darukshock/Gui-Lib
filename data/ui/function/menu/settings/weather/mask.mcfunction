@@ -6,7 +6,7 @@ data modify storage ui mask set value [\
       "minecraft:item_name": "BACK",\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/root/open"\
+          "cmd": "function ui:menu/settings/root/open"\
         }\
       }\
     }\
@@ -19,7 +19,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doWeatherCycle","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doWeatherCycle'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doWeatherCycle'}"\
         }\
       }\
     }\
@@ -68,7 +68,7 @@ data modify storage ui mask set value [\
       "minecraft:lore": ['{"italic":false,"translate":"gamerule.doDaylightCycle","color":"white","bold":true}'],\
       "minecraft:custom_data": {\
         "ui.item": {\
-          "cmd": "function ui/menu/settings/toggle_gamerule {id:'doDaylightCycle'}"\
+          "cmd": "function ui:menu/settings/toggle_gamerule {id:'doDaylightCycle'}"\
         }\
       }\
     }\

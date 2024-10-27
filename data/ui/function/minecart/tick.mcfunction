@@ -8,4 +8,4 @@ execute on passengers run data modify storage ui previous set from entity @s dat
 # save current tick's Items over previous, if you are able to then something has changed
 execute on passengers store result score #bool ui.val run data modify entity @s data.previous set from storage ui current
 
-execute if score #bool ui.val matches 1 run function ui/minecart/on_change
+execute if score #bool ui.val matches 1 run function ui:minecart/on_change

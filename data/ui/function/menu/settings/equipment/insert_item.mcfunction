@@ -1,4 +1,4 @@
-#> from: ui/menu/settings/equipment/handle_input
+#> from: ui:menu/settings/equipment/handle_input
 # mark the item as registered
 data modify entity @s data.page.waiting_for_item set value 0b
 # save the item
