@@ -1,0 +1,33 @@
+[
+    {
+        "condition": "value_check",
+        "range": {
+            "type": "score",
+            "score": "ui.val",
+            "target": {
+                "type": "fixed",
+                "name": "ui.clicked_amount"
+            }
+        },
+        "value": 0
+    },
+    {
+        "condition": "value_check",
+        "range": {
+            "type": "score",
+            "score": "ui.val",
+            "target": {
+                "type": "fixed",
+                "name": "C"
+            }
+        },
+        "value": {
+            "type": "score",
+            "score": "ui.val",
+            "target": {
+                "type": "fixed",
+                "name": "B"
+            }
+        }
+    }
+]
