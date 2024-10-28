@@ -103,7 +103,7 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
     function ui:menu/{menu name}/{page name}/mask
     data modify storage ui current set from storage ui mask
     execute on passengers run data modify entity @s data.page.mask set value "function ui:menu/{menu name}/{page name}/mask"
-e
+
 ## Credits
 - Original GUI framework : Cloud Wold
 - Invisible Minecarts : Misode
