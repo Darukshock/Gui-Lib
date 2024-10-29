@@ -105,16 +105,17 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
     - In your resource pack directory, create a new folder.
     - In this folder, paste the `pack.mcmeta` and the `assets` folder from this repository. <i>note : if you want, change the `pack_format` in the mcmeta to make the pack appear as updated in the pack selection screen. This won't actually change anything else. </i>
 
-3) Time to actually create your GUI.
+3) Create the default page
     + Navigate to `data/ui/function/player/open.mcfunction`.
     + In this function, `ui:menu/settings/root/open` is called. Change this to `ui:menu/{menu name}/{page name}/open`. In this function, write :
       ```js
       function ui:menu/{menu name}/{page name}/mask
       data modify storage ui current set from storage ui mask
       execute on passengers run data modify entity @s data.page.mask set value "function ui:menu/{menu name}/ {page name}/mask"
-    + Of course, replace `{menu name}` and `{page name}` with your own menu & page names.
-      + This will be the page that opens when the minecart is created.
-    + Now, write your mask. Go to `ui:menu/{menu name}/{page name}/mask`, and write :
+    + Replace `{menu name}` and `{page name}` with your own menu & page names. This will be the page that opens when the minecart is created.
+
+4) Write the mask
+    + Go to `ui:menu/{menu name}/{page name}/mask`, and write :
       ```json
       data modify storage ui mask set value [\
         {\
@@ -145,32 +146,31 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
       - Let's see how to write a proper mask :
         + The mask is simply an array of container items that will be copied over to the minecart's `Items` nbt.
         + Each element must have a `Slot` (byte), a `count` (int), an `id` (string) and `components`
-        + Inside `components.minecraft:custom_data."ui.item"` are the actual events that trigger based on the user's clicks. Here are the possible keys :
+### Click Events
+Inside `components.minecraft:custom_data."ui.item"` are the actual events that trigger based on the user's clicks. Here are the possible keys :
 
-            | **key**   | Runs a command...                                                                 |
-            |-----------|-----------------------------------------------------------------------------------|
-            | `empty`     | If this key exists, the item won't trigger any command.                           |
-            | `cmd`       | When the item is left-clicked, or right-clicked but its count is 1.               |
-            | `right`     | When the item is right-clicked and its count is more than 1.                      |
-            | `full_drop` | When the item stack is entirely dropped.                                          |
-            | `drop`      | When only one item from the stack is dropped, and its count is more than 1.       |
-            | `shift`     | When the item is shift-clicked. (also triggers when moved to hotbar with hotkeys) |
-            | `offhand`   | When the item is moved to offhand slot with the hotkey.                           |
-            | `input`     | When an item is inputed in this slot.                                             |
-        + So in the previous example, the ender pearl's `ui.item` component contains all of these keys, and those events will each trigger a different `say` command.
-        + TODO : add a GIF of this item working
-        + To make your menu have multiple pages, you can make the value of one of these keys an open function. in the next example, shift-clicking the item will open the page `bar` from the `foo` menu
-            ```json
-              {\
-                "ui.item": {\
-                  "shift": "ui:menu/foo/bar/open"\
-                }\
-              }\
-        + If you want to use the `input` event, you probably want to know the item that was inputed. It's located in `storage ui in[0]`.
+  | **key**   | Runs a command...                                                                 |
+  |-----------|-----------------------------------------------------------------------------------|
+  | `empty`     | If this key exists, the item won't trigger any command.                           |
+  | `cmd`       | When the item is left-clicked, or right-clicked but its count is 1.               |
+  | `right`     | When the item is right-clicked and its count is more than 1.                      |
+  | `full_drop` | When the item stack is entirely dropped.                                          |
+  | `drop`      | When only one item from the stack is dropped, and its count is more than 1.       |
+  | `shift`     | When the item is shift-clicked. (also triggers when moved to hotbar with hotkeys) |
+  | `offhand`   | When the item is moved to offhand slot with the hotkey.                           |
+  | `input`     | When an item is inputed in this slot.                                             |
+
+TODO : add a GIF of this item working
+
+In the previous example, the ender pearl's `ui.item` component contains all of these keys, and those events will each trigger a different `say` command.
+To make your menu have multiple pages, you can make the value of one of these keys an open function. in the next example, shift-clicking the item will open the page `bar` from the `foo` menu
+<img src="https://i.imgur.com/4Ca0U4k.png">
+
+If you want to use the `input` event, you probably want to know the item that was inputed. It's located in `storage ui in[0]`.
 
 4) Write your minecart opening logic
   - By default, the Gui can be opened by right-clicking with the menu item in hand (from the `ui:menu` loot table)
-  - You can change this behavior. You just have to make sure to change it in the `ui:tick_player` function.
+  - You can change this behavior. You just have to edit the `ui:tick_player` function.
     + `ui:player/teleport` must be run as & at the player every tick, so that upon right click, the Gui opens.
     + `ui:player/close` must be run as & at the player once to remove its linked minecart. A new minecart will be linked when running `ui:player/teleport` again.
 <i>This is my first time writing a guide for anything code-related. If you feel like you're missing something to make your own UI, please let me know on discord : @darukshock</i>
