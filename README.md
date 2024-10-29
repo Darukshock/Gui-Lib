@@ -15,7 +15,7 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
 
 ## Features
 - Highly customizable : you can have multiple menus, each with any number of pages, and their content get generated dynamically.
-
+- TODO : fix Creative UI and link it here as an example
 ## How to use
 
 0) A basic understanding of datapacks and NBT is recommended in order to follow this guide.
@@ -151,6 +151,7 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
             | `offhand`   | When the item is moved to offhand slot with the hotkey.                           |
             | `input`     | When an item is inputed in this slot.                                             |
         + So in the previous example, the ender pearl's `ui.item` component contains all of these keys, and those events will each trigger a different `say` command.
+        + TODO : add a GIF of this item working
         + To make your menu have multiple pages, you can make the value of one of these keys an open function. in the next example, shift-clicking the item will open the page `bar` from the `foo` menu
             ```json
               {
@@ -158,7 +159,7 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
                   "shift": "ui:menu/foo/bar/open"
                 }
               }
-
+        + TODO : explain how to use inputed click
 
 <i>This is my first time writing a guide for anything code-related. If you feel like you're missing something to make your own UI, please let me know on discord : @darukshock</i>
 ## Credits
