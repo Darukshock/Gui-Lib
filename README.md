@@ -108,7 +108,7 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
       execute on passengers run data modify entity @s data.page.mask set value "function ui:menu/{menu name}/ {page name}/mask"
     + Of course, replace `{menu name}` and `{page name}` with your own menu & page names.
     + Now, write your mask. Go to `ui:menu/{menu name}/{page name}/mask`, and write :
-      ```c
+      ```json
       data modify storage ui mask set value [\
         {\
             "Slot":12b,\
@@ -154,11 +154,11 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
         + TODO : add a GIF of this item working
         + To make your menu have multiple pages, you can make the value of one of these keys an open function. in the next example, shift-clicking the item will open the page `bar` from the `foo` menu
             ```json
-              {
-                "ui.item": {
-                  "shift": "ui:menu/foo/bar/open"
-                }
-              }
+              {\
+                "ui.item": {\
+                  "shift": "ui:menu/foo/bar/open"\
+                }\
+              }\
         + TODO : explain how to use inputed click
 
 <i>This is my first time writing a guide for anything code-related. If you feel like you're missing something to make your own UI, please let me know on discord : @darukshock</i>
