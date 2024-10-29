@@ -15,6 +15,7 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
 
 ## Features
 - Highly customizable : you can have multiple menus, each with any number of pages, and their content get generated dynamically.
+- Right & Shift click detection
 - TODO : fix Creative UI and link it here as an example
 
 ## How it works
@@ -173,6 +174,13 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
     + `ui:player/teleport` must be run as & at the player every tick, so that upon right click, the Gui opens.
     + `ui:player/close` must be run as & at the player once to remove its linked minecart. A new minecart will be linked when running `ui:player/teleport` again.
 <i>This is my first time writing a guide for anything code-related. If you feel like you're missing something to make your own UI, please let me know on discord : @darukshock</i>
+
+## Known Issues
+
+The Gui has a few flaws : 
+- The minecart isn't invincible, which means that players could punch it in until it gets removed
+- The minecart isn't private, so players could open someone else's Gui, which might cause problems. This lib was only tested in singleplayer
+
 ## Credits
 - Original GUI framework : Cloud Wold
 - Invisible Minecarts : Misode
