@@ -18,6 +18,9 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
 - Right & Shift click detection
 - TODO : fix Creative UI and link it here as an example
 
+>[!Warning]
+>May have problems in multiplayer
+
 ## How it works
 - The Gui revolves around manipulating a chest minecart.
 - It's riding an item display to make it immune to gravity, and teleport faster to player.
