@@ -16,6 +16,11 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
 ## Features
 - Highly customizable : you can have multiple menus, each with any number of pages, and their content get generated dynamically.
 - TODO : fix Creative UI and link it here as an example
+
+## How it works
+- The Gui revolves around manipulating a chest minecart.
+- It's riding an item display to make it immune to gravity, and teleport faster to player.
+- A marker entity is riding the minecart, in order to store arbitrary data.
 ## How to use
 
 0) A basic understanding of datapacks and NBT is recommended in order to follow this guide.
@@ -107,6 +112,7 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
       data modify storage ui current set from storage ui mask
       execute on passengers run data modify entity @s data.page.mask set value "function ui:menu/{menu name}/ {page name}/mask"
     + Of course, replace `{menu name}` and `{page name}` with your own menu & page names.
+      + This will be the page that opens when the minecart is created.
     + Now, write your mask. Go to `ui:menu/{menu name}/{page name}/mask`, and write :
       ```json
       data modify storage ui mask set value [\
@@ -159,8 +165,13 @@ Gui Lib is a Minecraft datapack that eases creation of menus through GUIs
                   "shift": "ui:menu/foo/bar/open"\
                 }\
               }\
-        + TODO : explain how to use inputed click
+        + If you want to use the `input` event, you probably want to know the item that was inputed. It's located in `storage ui in[0]`.
 
+4) Write your minecart opening logic
+  - By default, the Gui can be opened by right-clicking with the menu item in hand (from the `ui:menu` loot table)
+  - You can change this behavior. You just have to make sure to change it in the `ui:tick_player` function.
+    + `ui:player/teleport` must be run as & at the player every tick, so that upon right click, the Gui opens.
+    + `ui:player/close` must be run as & at the player once to remove its linked minecart. A new minecart will be linked when running `ui:player/teleport` again.
 <i>This is my first time writing a guide for anything code-related. If you feel like you're missing something to make your own UI, please let me know on discord : @darukshock</i>
 ## Credits
 - Original GUI framework : Cloud Wold
